@@ -1,0 +1,46 @@
+.weapons-table-container {
+  padding: 32px 0;
+  max-width: 100%;
+  overflow: auto hidden;
+
+  .select-box {
+    margin-bottom: 16px;
+
+    label {
+      font-size: 14px;
+      margin-right: 5px;
+    }
+  }
+
+  .weapons-table {
+    max-width: 100%;
+
+    thead {
+      border-bottom: 1px solid #000;
+
+      tr {
+        th {
+          position: relative;
+          font-size: 14px;
+          font-weight: 400;
+          background-color: #c9c9c9;
+          padding: 4px;
+          padding-bottom: 10px;
+          border-right: 1px solid #787878;
+          cursor: pointer;
+        }
+      }
+    }
+    tbody {
+      tr {
+        cursor: pointer;
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+      td {
+        border: 1px solid #000;
+      }
+    }
+  }
+}
