@@ -1,0 +1,31 @@
+$paynes-gray: #3a606eff;
+$slate-gray: #607b7dff;
+$battleship-gray: #828e82ff;
+$sage: #aaae8eff;
+$platinum: #e0e0e0ff;
+$dark: #070c0d;
+
+/* COLORS */
+$light: $platinum;
+$white: #ffffff;
+$accent: $sage;
+$black: $dark;
+$primary: $paynes-gray;
+$primary-light: $slate-gray;
+
+/* SHADOWS */
+$shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+$shadow-hover: 0 1px 2px rgba(0, 0, 0, 0.4);
+
+/* TRANSITIONS */
+$transition-duration: 200ms;
+$transition-timing: cubic-bezier(0.1, 0.57, 0.58, 1);
+$transition: all $transition-duration $transition-timing;
+
+@mixin transition($prop) {
+  -webkit-transition: $prop $transition-duration $transition-timing;
+  -moz-transition: $prop $transition-duration $transition-timing;
+  -ms-transition: $prop $transition-duration $transition-timing;
+  -o-transition: $prop $transition-duration $transition-timing;
+  transition: $prop $transition-duration $transition-timing;
+}

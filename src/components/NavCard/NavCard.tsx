@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import { NavCardStyle } from "./styles";
 
 export type NavCardType = {
   id: number;
@@ -11,10 +9,10 @@ export type NavCardType = {
 
 const NavCard = ({ id, name, image, url }: NavCardType) => {
   return (
-    <NavCardStyle href={url ? url : "#"}>
+    <a className="nav-card" href={url ? url : "#"}>
       <img src={image} alt={name} />
       <label>{name}</label>
-    </NavCardStyle>
+    </a>
   );
 };
 

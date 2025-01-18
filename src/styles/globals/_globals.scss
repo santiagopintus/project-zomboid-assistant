@@ -2,6 +2,10 @@
   font-family: "Corben", serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body,
 html {
   margin: 0;
@@ -21,5 +25,13 @@ h6 {
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: $light;
+  color: $black;
+  font-size: 1.6rem;
+}
+
+p {
+  strong {
+    font-size: 1.2rem;
+  }
 }

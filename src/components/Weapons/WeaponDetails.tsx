@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Weapon } from "./WeaponsTable";
+import ProgressBar from "../ProgressBar";
 
-const WeaponDetails = ({ w, onClose }: { w: Weapon; onClose: () => void }) => {
+const WeaponDetails = ({
+  w,
+  onClose,
+  maxStats,
+}: {
+  w: Weapon;
+  onClose: () => void;
+  maxStats: Weapon;
+}) => {
+  useEffect(() => {
+    console.log(maxStats);
+  }, [maxStats]);
+
+  const StatItem = ({
+    name,
+    attrName,
+    val,
+  }: {
+    name: string;
+    attrName: keyof Weapon;
+    val: number;
+  }) => {
+    return (
+      <>
+        <p>{name}</p>
+        <ProgressBar
+          attrName={attrName}
+          max={maxStats[attrName] as number}
+          value={val}
+        />
+      </>
+    );
+  };
+
   return (
     <div
       className="weapon-card-details"
@@ -42,10 +76,18 @@ const WeaponDetails = ({ w, onClose }: { w: Weapon; onClose: () => void }) => {
           <strong>Equipped:</strong> {w.Equipped}
         </li>
         <li>
-          <strong>Minimum Damage:</strong> {w["Minimum Damage"]}
+          <StatItem
+            name="Minimum Damage"
+            attrName="Minimum Damage"
+            val={w["Minimum Damage"] as number}
+          />
         </li>
         <li>
-          <strong>Maximum Damage:</strong> {w["Maximum Damage"]}
+          <StatItem
+            name="Maximum Damage"
+            attrName={"Maximum Damage"}
+            val={w["Maximum Damage"] as number}
+          />
         </li>
         <li>
           <strong>Door Damage:</strong> {w["Door Damage"]}

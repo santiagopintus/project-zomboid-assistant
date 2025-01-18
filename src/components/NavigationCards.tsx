@@ -1,6 +1,5 @@
 import React from "react";
 import NavCard, { NavCardType } from "./NavCard/NavCard";
-import s from "../styles/components/navigation-cards.module.scss";
 
 const NavigationCards = () => {
   const options: NavCardType[] = [
@@ -24,10 +23,11 @@ const NavigationCards = () => {
   ];
 
   return (
-    <div className={s.navigationCardsContainer}>
+    <div className={"navigation-cards-container"}>
       {options.map((option) => (
         <NavCard
           key={option.id}
+          attrName={option.id}
           id={option.id}
           image={option.image}
           name={option.name}

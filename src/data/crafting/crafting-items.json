@@ -1,0 +1,102 @@
+[
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\"><img alt=\"Plank.png\" src=\"https://pzwiki.net/w/images/0/0d/Plank.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\">Plank</a><small> ×3</small>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\"><img alt=\"Logs.png\" src=\"https://pzwiki.net/w/images/2/2d/Logs.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\">Log</a> <small>×1</small>",
+    "Tools": "<span class=\"cycle-img\"><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Garden Saw\" style=\"display: none;\"><img alt=\"Garden Saw\" src=\"https://pzwiki.net/w/images/4/46/Handsaw.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Saw\" style=\"display: inline;\"><img alt=\"Saw\" src=\"https://pzwiki.net/w/images/b/b6/Hacksaw.png\" decoding=\"async\" width=\"32\" height=\"32\"></a></span><br><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Saw (tag)\">Saw (tag)</a>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "0.75<br><small>(0.25 above <a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a> 3)</small> <a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Mortar_and_Pestle\" title=\"Mortar and Pestle\"><img alt=\"MortarPestle.png\" src=\"https://pzwiki.net/w/images/3/3f/MortarPestle.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Mortar_and_Pestle\" title=\"Mortar and Pestle\">Mortar and Pestle</a>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\"><img alt=\"Plank.png\" src=\"https://pzwiki.net/w/images/0/0d/Plank.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\">Plank</a> <small>×1</small>",
+    "Tools": "<span class=\"cycle-img\"><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Garden Saw\" style=\"display: none;\"><img alt=\"Garden Saw\" src=\"https://pzwiki.net/w/images/4/46/Handsaw.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Saw\" style=\"display: inline;\"><img alt=\"Saw\" src=\"https://pzwiki.net/w/images/b/b6/Hacksaw.png\" decoding=\"async\" width=\"32\" height=\"32\"></a></span><br><a href=\"https://pzwiki.net/wiki/Saw_(tag)\" title=\"Saw (tag)\">Saw (tag)</a>",
+    "Requirements": "<a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a> 2",
+    "Workstation": "<i>none</i>",
+    "XP": "0.25 <a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Bucket_of_Plaster\" title=\"Bucket of Plaster\"><img alt=\"MetalBucket Plaster.png\" src=\"https://pzwiki.net/w/images/3/37/MetalBucket_Plaster.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Bucket_of_Plaster\" title=\"Bucket of Plaster\">Bucket of Plaster</a>",
+    "Ingredients": "<small>One of:</small><br><a href=\"https://pzwiki.net/wiki/Bucket\" title=\"Bucket\"><img alt=\"MetalBucket.png\" src=\"https://pzwiki.net/w/images/thumb/4/40/MetalBucket.png/16px-MetalBucket.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/4/40/MetalBucket.png/24px-MetalBucket.png 1.5x, /w/images/4/40/MetalBucket.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Bucket\" title=\"Bucket\">Bucket</a> <small>×1</small><br><a href=\"https://pzwiki.net/wiki/Bucket_of_Water\" title=\"Bucket of Water\"><img alt=\"MetalBucket Water.png\" src=\"https://pzwiki.net/w/images/thumb/2/2e/MetalBucket_Water.png/16px-MetalBucket_Water.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/2/2e/MetalBucket_Water.png/24px-MetalBucket_Water.png 1.5x, /w/images/2/2e/MetalBucket_Water.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Bucket_of_Water\" class=\"mw-redirect\" title=\"Bucket of Water\">Bucket</a> <small>×1</small><br><small>Each of:</small><br><a href=\"https://pzwiki.net/wiki/Water\" title=\"Water\"><img alt=\"WaterDrop.png\" src=\"https://pzwiki.net/w/images/d/d5/WaterDrop.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Water\" title=\"Water\">Water</a> <small>×5 <small>unit(s)</small></small><br><a href=\"https://pzwiki.net/wiki/Bag_of_Plaster_Powder\" title=\"Bag of Plaster Powder\"><img alt=\"Plaster Powder.png\" src=\"https://pzwiki.net/w/images/9/90/Plaster_Powder.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Bag_of_Plaster_Powder\" title=\"Bag of Plaster Powder\">Bag of Plaster Powder</a> <small>×1</small>",
+    "Tools": "<i>none</i>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Drawer\" title=\"Drawer\"><img alt=\"Drawer.png\" src=\"https://pzwiki.net/w/images/a/a0/Drawer.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Drawer\" title=\"Drawer\">Drawer</a>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\"><img alt=\"Plank.png\" src=\"https://pzwiki.net/w/images/0/0d/Plank.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\">Plank</a> <small>×1</small><br><a href=\"https://pzwiki.net/wiki/Doorknob\" title=\"Doorknob\"><img alt=\"DoorKnob.png\" src=\"https://pzwiki.net/w/images/e/e2/DoorKnob.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Doorknob\" title=\"Doorknob\">Doorknob</a> <small>×1</small><br><a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\"><img alt=\"Nails.png\" src=\"https://pzwiki.net/w/images/5/50/Nails.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\">Nails</a> <small>×1</small>",
+    "Tools": "<span class=\"cycle-img\"><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Ball-peen Hammer\" style=\"\"><img alt=\"Ball-peen Hammer\" src=\"https://pzwiki.net/w/images/a/ad/BallPeenHammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer\" style=\"display: none;\"><img alt=\"Hammer\" src=\"https://pzwiki.net/w/images/8/81/Hammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Stone Hammer\" style=\"display: none;\"><img alt=\"Stone Hammer\" src=\"https://pzwiki.net/w/images/f/f6/HammerStone.png\" decoding=\"async\" width=\"32\" height=\"32\"></a></span><br><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer (tag)\">Hammer (tag)</a>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "0.25 <a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Mattress\" title=\"Mattress\"><img alt=\"Mattress.png\" src=\"https://pzwiki.net/w/images/5/5b/Mattress.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Mattress\" title=\"Mattress\">Mattress</a>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Thread\" title=\"Thread\"><img alt=\"Thread.png\" src=\"https://pzwiki.net/w/images/6/6b/Thread.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Thread\" title=\"Thread\">Thread</a> <small>×2 <small>unit(s)</small></small><br><a href=\"https://pzwiki.net/wiki/Sheet\" title=\"Sheet\"><img alt=\"Sheet.png\" src=\"https://pzwiki.net/w/images/d/d2/Sheet.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Sheet\" title=\"Sheet\">Sheet</a> <small>×5</small><br><a href=\"https://pzwiki.net/wiki/Pillow\" title=\"Pillow\"><img alt=\"Pillow.png\" src=\"https://pzwiki.net/w/images/3/36/Pillow.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Pillow\" title=\"Pillow\">Pillow</a> <small>×5</small>",
+    "Tools": "<a href=\"https://pzwiki.net/wiki/Needle\" title=\"Needle\"><img alt=\"Needle.png\" src=\"https://pzwiki.net/w/images/c/c3/Needle.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><br><a href=\"https://pzwiki.net/wiki/Needle\" title=\"Needle\">Needle</a><br>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Logs_Stack\" title=\"Log Stack\"><img alt=\"Log Stack\" src=\"https://pzwiki.net/w/images/f/f6/Logs2.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Logs_Stack\" class=\"mw-redirect\" title=\"Logs Stack\">Log Stack</a>",
+    "Ingredients": "<small>One of:</small><br><a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\"><img alt=\"Rope.png\" src=\"https://pzwiki.net/w/images/thumb/b/b4/Rope.png/16px-Rope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/b/b4/Rope.png/24px-Rope.png 1.5x, /w/images/b/b4/Rope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\">Rope</a> <small>×2</small><br><a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\"><img alt=\"SheetRope.png\" src=\"https://pzwiki.net/w/images/thumb/0/0e/SheetRope.png/16px-SheetRope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/0/0e/SheetRope.png/24px-SheetRope.png 1.5x, /w/images/0/0e/SheetRope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\">Sheet Rope</a> <small>×2</small><br><small>Each of:</small><br><a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\"><img alt=\"Logs.png\" src=\"https://pzwiki.net/w/images/2/2d/Logs.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\">Log</a> <small>×2</small>",
+    "Tools": "<i>none</i>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Logs_Stack\" title=\"Log Stack\"><img alt=\"Log Stack\" src=\"https://pzwiki.net/w/images/1/1d/Logs3.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Logs_Stack\" class=\"mw-redirect\" title=\"Logs Stack\">Log Stack</a>",
+    "Ingredients": "<small>One of:</small><br><a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\"><img alt=\"Rope.png\" src=\"https://pzwiki.net/w/images/thumb/b/b4/Rope.png/16px-Rope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/b/b4/Rope.png/24px-Rope.png 1.5x, /w/images/b/b4/Rope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\">Rope</a> <small>×2</small><br><a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\"><img alt=\"SheetRope.png\" src=\"https://pzwiki.net/w/images/thumb/0/0e/SheetRope.png/16px-SheetRope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/0/0e/SheetRope.png/24px-SheetRope.png 1.5x, /w/images/0/0e/SheetRope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\">Sheet Rope</a> <small>×2</small><br><small>Each of:</small><br><a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\"><img alt=\"Logs.png\" src=\"https://pzwiki.net/w/images/2/2d/Logs.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\">Log</a> <small>×3</small>",
+    "Tools": "<i>none</i>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Logs_Stack\" title=\"Log Stack\"><img alt=\"Log Stack\" src=\"https://pzwiki.net/w/images/d/da/Logs4.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Logs_Stack\" class=\"mw-redirect\" title=\"Logs Stack\">Log Stack</a>",
+    "Ingredients": "<small>One of:</small><br><a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\"><img alt=\"Rope.png\" src=\"https://pzwiki.net/w/images/thumb/b/b4/Rope.png/16px-Rope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/b/b4/Rope.png/24px-Rope.png 1.5x, /w/images/b/b4/Rope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Rope\" title=\"Rope\">Rope</a> <small>×2</small><br><a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\"><img alt=\"SheetRope.png\" src=\"https://pzwiki.net/w/images/thumb/0/0e/SheetRope.png/16px-SheetRope.png\" decoding=\"async\" width=\"16\" height=\"16\" class=\"pixelart\" srcset=\"/w/images/thumb/0/0e/SheetRope.png/24px-SheetRope.png 1.5x, /w/images/0/0e/SheetRope.png 2x\"></a> <a href=\"https://pzwiki.net/wiki/Sheet_Rope\" title=\"Sheet Rope\">Sheet Rope</a> <small>×2</small><br><small>Each of:</small><br><a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\"><img alt=\"Logs.png\" src=\"https://pzwiki.net/w/images/2/2d/Logs.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Log\" title=\"Log\">Log</a> <small>×4</small>",
+    "Tools": "<i>none</i>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Spiked_Baseball_Bat\" title=\"Spiked Baseball Bat\"><img alt=\"BaseballBatNails.png\" src=\"https://pzwiki.net/w/images/f/f9/BaseballBatNails.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Spiked_Baseball_Bat\" title=\"Spiked Baseball Bat\">Spiked Baseball Bat</a>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Baseball_Bat\" title=\"Baseball Bat\"><img alt=\"BaseballBat.png\" src=\"https://pzwiki.net/w/images/4/40/BaseballBat.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Baseball_Bat\" title=\"Baseball Bat\">Baseball Bat</a> <small>×1</small><br><a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\"><img alt=\"Nails.png\" src=\"https://pzwiki.net/w/images/5/50/Nails.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\">Nails</a> <small>×5</small>",
+    "Tools": "<span class=\"cycle-img\"><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Ball-peen Hammer\" style=\"\"><img alt=\"Ball-peen Hammer\" src=\"https://pzwiki.net/w/images/a/ad/BallPeenHammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer\" style=\"display: none;\"><img alt=\"Hammer\" src=\"https://pzwiki.net/w/images/8/81/Hammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Stone Hammer\" style=\"display: none;\"><img alt=\"Stone Hammer\" src=\"https://pzwiki.net/w/images/f/f6/HammerStone.png\" decoding=\"async\" width=\"32\" height=\"32\"></a></span><br><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer (tag)\">Hammer (tag)</a>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "<i>none</i><br>"
+  },
+  {
+    "Category": "Carpentry",
+    "subCategory": "Miscellaneous",
+    "Product": "<a href=\"https://pzwiki.net/wiki/Spiked_Plank\" title=\"Spiked Plank\"><img alt=\"PlankNail.png\" src=\"https://pzwiki.net/w/images/6/65/PlankNail.png\" decoding=\"async\" width=\"64\" height=\"64\" class=\"pixelart\"></a><br><a href=\"https://pzwiki.net/wiki/Spiked_Plank\" title=\"Spiked Plank\">Spiked Plank</a>",
+    "Ingredients": "<a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\"><img alt=\"Plank.png\" src=\"https://pzwiki.net/w/images/0/0d/Plank.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Plank\" title=\"Plank\">Plank</a> <small>×1</small><br><a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\"><img alt=\"Nails.png\" src=\"https://pzwiki.net/w/images/5/50/Nails.png\" decoding=\"async\" width=\"32\" height=\"32\" class=\"pixelart\"></a> <a href=\"https://pzwiki.net/wiki/Nails\" title=\"Nails\">Nails</a> <small>×5</small>",
+    "Tools": "<span class=\"cycle-img\"><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Ball-peen Hammer\" style=\"\"><img alt=\"Ball-peen Hammer\" src=\"https://pzwiki.net/w/images/a/ad/BallPeenHammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer\" style=\"display: none;\"><img alt=\"Hammer\" src=\"https://pzwiki.net/w/images/8/81/Hammer.png\" decoding=\"async\" width=\"32\" height=\"32\"></a><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Stone Hammer\" style=\"display: none;\"><img alt=\"Stone Hammer\" src=\"https://pzwiki.net/w/images/f/f6/HammerStone.png\" decoding=\"async\" width=\"32\" height=\"32\"></a></span><br><a href=\"https://pzwiki.net/wiki/Hammer_(tag)\" title=\"Hammer (tag)\">Hammer (tag)</a>",
+    "Requirements": "<i>none</i>",
+    "Workstation": "<i>none</i>",
+    "XP": "0.25 <a href=\"https://pzwiki.net/wiki/Carpentry\" title=\"Carpentry\">Carpentry</a>"
+  }
+]

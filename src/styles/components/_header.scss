@@ -1,0 +1,38 @@
+header.header {
+  background-color: $primary-light;
+  color: $black;
+  padding: 1rem 0;
+  box-shadow: $shadow;
+  margin-bottom: 32px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.navigation-items {
+    display: flex;
+    gap: 1rem;
+
+    .nav-item {
+      list-style: none;
+
+      .nav-link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: $primary;
+        color: $white;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        @include transition(all);
+        box-shadow: $shadow;
+
+        &:hover {
+          background-color: darken($primary, 10%);
+          box-shadow: $shadow-hover;
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,77 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import tableColumns from "./tableColumns.json";
+
+interface TableColumns {
+  weapons: string[];
+  crafting: string[];
+  [key: string]: string[];
+}
 
 const Converter: React.FC = () => {
   const [input, setInput] = useState<string>("");
   const [output, setOutput] = useState<string>("");
   const [totalObjects, setTotalObjects] = useState<number>(0);
   const imgHost = "https://pzwiki.net";
+  const availableColumns = tableColumns as TableColumns;
 
-  const categories = [
+  const weaponCategories = [
     "Improvised",
     "Axes",
     "Long Blades",
     "Short Blades",
     "Long Blunts",
     "Short Blunts",
-    "Spears",
   ];
 
-  const [category, setCategory] = useState<string>(categories[0]); // Default to first category
+  const craftingCategories = [
+    "Ammunition",
+    "Assembly",
+    "Carpentry",
+    "Carving",
+    "Cooking",
+    "Electrical",
+    "Farming",
+    "Fishing",
+    "General",
+    "Glassmaking",
+    "Health",
+    "Knapping",
+    "Medical",
+    "Metalworking",
+    "Miscellaneous",
+    "Packing",
+    "Pottery",
+    "Repair",
+    "Survival",
+    "Trapper",
+    "Weaponry",
+  ];
+  const subCategories = [
+    "Construction",
+    "Furniture",
+    "Miscellaneous",
+    "Weapons",
+  ];
+
+  const tableTypes = ["weapons", "crafting"];
+  const [availableCategories, setAvailableCategories] = useState<string[]>([]);
+  const [selectedTableType, setSelectedTableType] = useState<string>(
+    tableTypes[0]
+  );
+
+  const [itemCategory, setItemCategory] = useState<string>("");
+  const [subCategory, setSubCategory] = useState<string>("");
+  const [attributeNames, setAttributeNames] = useState<string[]>([]);
+
+  useEffect(() => {
+    setAttributeNames(availableColumns[selectedTableType]);
+    if (selectedTableType === "weapons") {
+      setAvailableCategories(weaponCategories);
+    } else {
+      setAvailableCategories(craftingCategories);
+    }
+  }, [selectedTableType]);
 
   const handleConvert = () => {
     try {
@@ -26,45 +80,27 @@ const Converter: React.FC = () => {
       const table = doc.querySelector("table");
       if (!table) throw new Error("No table found");
 
-      const attributeNames = [
-        "Icon",
-        "Name",
-        "Encumbrance",
-        "Equipped",
-        "Minimum Damage",
-        "Maximum Damage",
-        "Door Damage",
-        "Tree Damage",
-        "Minimum Range",
-        "Maximum Range",
-        "Attack Speed",
-        "Critical Hit Chance",
-        "Critical Multiplier",
-        "Knockback",
-        "Max Condition",
-        "Condition Lower Chance",
-        "Average Condition",
-        "Item ID",
-      ];
-
       const rows = Array.from(table.querySelectorAll("tbody tr"));
 
       const jsonArray = rows.map((row) => {
         const cells = Array.from(row.querySelectorAll("td"));
         const obj: { [key: string]: string } = {};
 
-        obj["Category"] = category;
+        obj["Category"] = itemCategory;
+        obj["subCategory"] = subCategory;
 
         cells.forEach((cell, i) => {
-          const img = cell.querySelector("img");
-          if (img) {
-            obj[attributeNames[i]] = img.src.replace(
-              /^https?:\/\/[^\/]+/,
-              imgHost
-            );
-          } else {
-            obj[attributeNames[i]] = cell.textContent?.trim() || "";
-          }
+          console.log(cell);
+          const images = cell.querySelectorAll("img");
+          images.forEach((img) => {
+            img.src = img.src.replace(/^https?:\/\/[^\/]+/, imgHost);
+          });
+          const anchors = cell.querySelectorAll("a");
+          anchors.forEach((anchor) => {
+            anchor.href = anchor.href.replace(/^https?:\/\/[^\/]+/, imgHost);
+          });
+
+          obj[attributeNames[i]] = cell.innerHTML.trim();
         });
         return obj;
       });
@@ -75,21 +111,48 @@ const Converter: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    console.log(category);
-    setOutput("");
-  }, [category]);
-
   return (
     <>
-      <label>Category: </label>
+      <label>Table Type: </label>
       <select
-        name="category"
-        id="category"
-        onChange={(e) => setCategory(e.target.value)}
+        name="tableType"
+        id="tableType"
+        onChange={(e) => setSelectedTableType(e.target.value)}
       >
-        {categories.map((c, i) => (
-          <option key={i} value={c}>
+        {tableTypes.map((c, i) => (
+          <option attrName={i} value={c}>
+            {c}
+          </option>
+        ))}
+      </select>
+
+      {/* Category */}
+      {!!selectedTableType && (
+        <>
+          <label>Category: </label>
+          <select
+            name="category"
+            id="category"
+            onChange={(e) => setItemCategory(e.target.value)}
+          >
+            {availableCategories.map((c, i) => (
+              <option attrName={i} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
+        </>
+      )}
+
+      {/* Subcategory */}
+      <label>Sub Category: </label>
+      <select
+        name="subCategory"
+        id="subCategory"
+        onChange={(e) => setSubCategory(e.target.value)}
+      >
+        {subCategories.map((c, i) => (
+          <option attrName={i} value={c}>
             {c}
           </option>
         ))}

@@ -21,19 +21,22 @@ export type Weapon = {
   "Minimum Range": number | string;
   "Maximum Range": number | string;
   "Attack Speed": number | string;
-  "Critical Hit Chance": string;
-  "Critical Multiplier": string;
+  "Critical Hit Chance": number | string;
+  "Critical Multiplier": number | string;
   Knockback: number | string;
   "Max Condition": number | string;
   "Condition Lower Chance": number | string;
   "Average Condition": number | string;
   "Item ID": string;
+  [key: string]: number | string;
 };
 
 const WeaponsTable = ({
   onWeaponClick,
+  updateMaxStats,
 }: {
   onWeaponClick: (w: Weapon) => void;
+  updateMaxStats: (w: Weapon) => void;
 }) => {
   const [weapons, setWeapons] = useState<any[]>([]);
   const [sortedWeapons, setSortedWeapons] = useState<any[]>([]);
@@ -43,6 +46,41 @@ const WeaponsTable = ({
   } | null>(null);
 
   const categoryRef = React.useRef<HTMLSelectElement>(null);
+
+  const getMaxStats = () => {
+    const bestStats: Weapon = weapons.reduce(
+      (acc, weapon) => {
+        Object.keys(weapon).forEach((key) => {
+          if (typeof weapon[key] === "number" || !isNaN(Number(weapon[key]))) {
+            acc[key] = Math.max(Number(acc[key]), Number(weapon[key]));
+          }
+        });
+        return acc;
+      },
+      {
+        Icon: "",
+        Category: "",
+        Name: "",
+        Encumbrance: 0,
+        Equipped: "",
+        "Minimum Damage": 0,
+        "Maximum Damage": 0,
+        "Door Damage": 0,
+        "Tree Damage": 0,
+        "Minimum Range": 0,
+        "Maximum Range": 0,
+        "Attack Speed": 0,
+        "Critical Hit Chance": 0,
+        "Critical Multiplier": 0,
+        Knockback: 0,
+        "Max Condition": 0,
+        "Condition Lower Chance": 0,
+        "Average Condition": 0,
+        "Item ID": "",
+      } as Weapon
+    );
+    updateMaxStats(bestStats);
+  };
 
   const filterWeapons = () => {
     const selectedCategory = categoryRef.current?.value;
@@ -73,6 +111,7 @@ const WeaponsTable = ({
     if (weapons.length > 0) {
       sortTable("Maximum Damage");
     }
+    getMaxStats();
   }, [weapons]);
 
   const sortTable = (key: string) => {
@@ -112,35 +151,37 @@ const WeaponsTable = ({
 
   return (
     <>
-      <div className="weapons-table-container">
-        {/* CATEGORY SELECT */}
-        <div className="select-box">
-          <label htmlFor="category">Categoría: </label>
-          <select
-            name="category"
-            id="category"
-            ref={categoryRef}
-            onChange={filterWeapons}
-            defaultValue={"All"}
-          >
-            <option value="All">All</option>
-            {categories.map((c, i) => (
-              <option key={i} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </div>
-
+      {/* CATEGORY SELECT */}
+      <div className="select-box">
+        <label htmlFor="category">Categoría: </label>
+        <select
+          name="category"
+          id="category"
+          ref={categoryRef}
+          onChange={filterWeapons}
+          defaultValue={"All"}
+        >
+          <option value="All">All</option>
+          {categories.map((c, i) => (
+            <option attrName={i} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="custom-table-container">
         {/* WEAPONS TABLE */}
-        <table className="weapons-table" style={{ borderCollapse: "collapse" }}>
+        <table className="custom-table" style={{ borderCollapse: "collapse" }}>
           <thead>
             <tr>
               {Object.keys(sortedWeapons[0] || {}).map((key) => (
-                <th key={key} onClick={() => sortTable(key)}>
+                <th attrName={key} onClick={() => sortTable(key)}>
                   {key}
                   {sortConfig?.key === key && (
-                    <SortedArrow direction={sortConfig.direction} key={key} />
+                    <SortedArrow
+                      direction={sortConfig.direction}
+                      attrName={key}
+                    />
                   )}
                 </th>
               ))}
@@ -148,9 +189,13 @@ const WeaponsTable = ({
           </thead>
           <tbody>
             {sortedWeapons.map((weapon, index) => (
-              <tr key={index} onClick={() => onWeaponClick(weapon)}>
+              <tr
+                className="centered"
+                attrName={index}
+                onClick={() => onWeaponClick(weapon)}
+              >
                 {Object.entries(weapon).map(([key, value], i) => (
-                  <td key={i}>
+                  <td attrName={i}>
                     {key === "Icon" ? (
                       <img src={value as string} alt={weapon.Name} />
                     ) : (
