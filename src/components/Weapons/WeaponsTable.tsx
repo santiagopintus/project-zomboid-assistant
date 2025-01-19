@@ -49,6 +49,7 @@ const WeaponsTable = ({
 
   const categoryRef = React.useRef<HTMLSelectElement>(null);
 
+  /* Get the global maximum stats*/
   const getMaxStats = () => {
     const bestStats: Weapon = weapons.reduce(
       (acc, weapon) => {
@@ -84,6 +85,7 @@ const WeaponsTable = ({
     updateMaxStats(bestStats);
   };
 
+  /* Filter weapons based on the selected category */
   const filterWeapons = () => {
     const selectedCategory = categoryRef.current?.value;
     if (selectedCategory && selectedCategory !== "All") {
@@ -96,6 +98,7 @@ const WeaponsTable = ({
     }
   };
 
+  /* Load all weapons into the table */
   useEffect(() => {
     const allWeapons: Weapon[] = [
       ...improvised,
@@ -116,6 +119,7 @@ const WeaponsTable = ({
     getMaxStats();
   }, [weapons]);
 
+  /* Sort table by selected column (Alphabetical or Numerical) */
   const sortTable = (key: string) => {
     let direction = "descending";
     if (
@@ -142,6 +146,7 @@ const WeaponsTable = ({
     setSortConfig({ key, direction });
   };
 
+  /* Extract unique categories from the weapons list */
   const categories: string[] = weapons.reduce((acc, weapon) => {
     if (!acc.includes(weapon.Category)) {
       acc.push(weapon.Category);

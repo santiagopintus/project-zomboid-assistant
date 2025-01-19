@@ -20,6 +20,7 @@ const NavigationCards = () => {
     {
       id: 3,
       name: "Crafting guide",
+      url: "/crafting",
       image:
         "https://steamuserimages-a.akamaihd.net/ugc/2051987356396626395/D98E8BA84A608CF0013FF40FD61C6EFA19F18559/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
     },

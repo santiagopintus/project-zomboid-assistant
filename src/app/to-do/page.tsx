@@ -84,11 +84,13 @@ const ToDoPage = () => {
     setSortedList(todoList);
   }, [todoList]);
 
+  /* Save sorted list to local storage after every change */
   useEffect(() => {
     setLoading(false);
     saveToLocalStorage("todoList", sortedList);
   }, [sortedList]);
 
+  /* Sort list by completed status (pushes completed items to the bottom) */
   const sortTodoList = React.useCallback(() => {
     const prevList = todoList;
     setSortedList(
@@ -101,10 +103,12 @@ const ToDoPage = () => {
     sortTodoList();
   }, [todoList, sortTodoList]);
 
+  /* Remove item from list by filtering the array and setting the state */
   const handleRemoveItem = (id: string) => {
     setTodoList(todoList.filter((item) => item.id !== id));
   };
 
+  /* Update item status by toggling the completed property */
   const handleUpdateItem = (id: string) => {
     setTodoList(
       todoList.map((item) =>
@@ -113,12 +117,13 @@ const ToDoPage = () => {
     );
   };
 
+  /* Add new item to list by creating a new object and setting the state */
   const handleAddItem = (e: React.FormEvent) => {
     e.preventDefault();
     if (newTodoTitle.trim() === "") return;
 
     const newTodo: ToDoItem = {
-      id: crypto.randomUUID(),
+      id: crypto.randomUUID(), // Generate a unique ID for the new item
       title: newTodoTitle.trim(),
       completed: false,
     };
@@ -128,6 +133,7 @@ const ToDoPage = () => {
     sortTodoList();
   };
 
+  /* Welcome message */
   const WelcomeMsg = () => {
     return (
       <>

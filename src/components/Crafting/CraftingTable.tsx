@@ -1,4 +1,5 @@
 "use client";
+import * as React from "react";
 import products from "@/data/crafting/crafting-items.json";
 import { useEffect, useRef, useState } from "react";
 
@@ -10,6 +11,8 @@ const CraftingTable = () => {
   const categoryRef = useRef<HTMLSelectElement>(null);
   const subCategoryRef = useRef<HTMLSelectElement>(null);
 
+  // Filters products based on the selected category.
+  // If "All" is selected, it shows all products.
   const filterProducts = () => {
     const selectedCategory = categoryRef.current?.value;
     if (selectedCategory && selectedCategory !== "All") {
@@ -22,6 +25,8 @@ const CraftingTable = () => {
     }
   };
 
+  // Filters products based on the selected sub-category.
+  // It also ensures the selected category matches the current category.
   const filterSubCategory = () => {
     const selectedSubCategory = subCategoryRef.current?.value;
     if (selectedSubCategory && selectedSubCategory !== "All") {
@@ -36,6 +41,8 @@ const CraftingTable = () => {
     }
   };
 
+  // Extracts unique categories from the products list.
+  // It sorts the categories alphabetically.
   const categories = products.reduce((acc, product) => {
     if (!acc.includes(product.Category)) {
       acc.push(product.Category);
@@ -46,6 +53,8 @@ const CraftingTable = () => {
   categories.sort();
 
   useEffect(() => {
+    // Extracts unique sub-categories from the filtered products list.
+    // It sorts the sub-categories alphabetically.
     const subCategories = products.reduce((acc, product) => {
       if (!acc.includes(product.subCategory)) {
         acc.push(product.subCategory);
