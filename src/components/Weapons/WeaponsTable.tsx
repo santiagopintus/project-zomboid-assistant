@@ -7,6 +7,8 @@ import longBlunts from "@/data/weapons/long_blunts.json";
 import shortBlunts from "@/data/weapons/short_blunts.json";
 import spears from "@/data/weapons/spears.json";
 import SortedArrow from "./SortedArrow";
+import Loading from "../Loading";
+import Image from "next/image";
 
 export type Weapon = {
   Icon: string;
@@ -38,8 +40,8 @@ const WeaponsTable = ({
   onWeaponClick: (w: Weapon) => void;
   updateMaxStats: (w: Weapon) => void;
 }) => {
-  const [weapons, setWeapons] = useState<any[]>([]);
-  const [sortedWeapons, setSortedWeapons] = useState<any[]>([]);
+  const [weapons, setWeapons] = useState<Weapon[]>([]);
+  const [sortedWeapons, setSortedWeapons] = useState<Weapon[]>([]);
   const [sortConfig, setSortConfig] = useState<{
     key: string;
     direction: string;
@@ -153,7 +155,7 @@ const WeaponsTable = ({
     <>
       {/* CATEGORY SELECT */}
       <div className="select-box">
-        <label htmlFor="category">Categoría: </label>
+        <label htmlFor="category">Category: </label>
         <select
           name="category"
           id="category"
@@ -163,51 +165,65 @@ const WeaponsTable = ({
         >
           <option value="All">All</option>
           {categories.map((c, i) => (
-            <option attrName={i} value={c}>
+            <option key={i} value={c}>
               {c}
             </option>
           ))}
         </select>
       </div>
-      <div className="custom-table-container">
-        {/* WEAPONS TABLE */}
-        <table className="custom-table" style={{ borderCollapse: "collapse" }}>
-          <thead>
-            <tr>
-              {Object.keys(sortedWeapons[0] || {}).map((key) => (
-                <th attrName={key} onClick={() => sortTable(key)}>
-                  {key}
-                  {sortConfig?.key === key && (
-                    <SortedArrow
-                      direction={sortConfig.direction}
-                      attrName={key}
-                    />
-                  )}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {sortedWeapons.map((weapon, index) => (
-              <tr
-                className="centered"
-                attrName={index}
-                onClick={() => onWeaponClick(weapon)}
-              >
-                {Object.entries(weapon).map(([key, value], i) => (
-                  <td attrName={i}>
-                    {key === "Icon" ? (
-                      <img src={value as string} alt={weapon.Name} />
-                    ) : (
-                      (value as string)
+
+      {sortedWeapons.length > 0 ? (
+        <div className="custom-table-container">
+          {/* WEAPONS TABLE */}
+          <table
+            className="custom-table"
+            style={{ borderCollapse: "collapse" }}
+          >
+            <thead>
+              <tr>
+                {Object.keys(sortedWeapons[0] || {}).map((colName) => (
+                  <th key={colName} onClick={() => sortTable(colName)}>
+                    {colName}
+                    {sortConfig?.key === colName && (
+                      <SortedArrow
+                        direction={sortConfig.direction}
+                        key={colName}
+                      />
                     )}
-                  </td>
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody>
+              {sortedWeapons.map((weapon, index) => (
+                <tr
+                  key={index}
+                  className="centered"
+                  onClick={() => onWeaponClick(weapon)}
+                >
+                  {Object.entries(weapon).map(([key, value], i) => (
+                    <td key={i}>
+                      {key === "Icon" ? (
+                        <Image
+                          width={50}
+                          height={50}
+                          src={value as string}
+                          alt={weapon.Name}
+                          style={{ padding: 5 }}
+                        />
+                      ) : (
+                        (value as string)
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <Loading />
+      )}
     </>
   );
 };

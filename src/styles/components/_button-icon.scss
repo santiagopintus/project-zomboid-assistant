@@ -1,0 +1,15 @@
+.button-icon {
+  background-color: #3a606e;
+  color: #ffffff;
+  border: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #263f49;
+  }
+}

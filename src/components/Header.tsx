@@ -4,8 +4,7 @@ const Header = () => {
   const links = [
     { href: "/", text: "Home" },
     { href: "/weapons", text: "Weapons guide" },
-    { href: "/to-do", text: "To do guide" },
-    { href: "/converter", text: "Conversor" },
+    { href: "/to-do", text: "To do list" },
     { href: "/crafting", text: "Crafting guide" },
   ];
   return (
