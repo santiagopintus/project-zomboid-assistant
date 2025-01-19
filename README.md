@@ -6,7 +6,7 @@ To run the app locally, clone the repository, install the dependencies using `np
 
 The purpose of this software is to create an interactive, user-friendly application that organizes complex game data in an intuitive way, helping players easily access critical information and improve their gameplay strategies.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/7ULTY-dsd6s)
 
 # Web Pages
 
