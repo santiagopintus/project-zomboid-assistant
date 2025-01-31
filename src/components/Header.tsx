@@ -1,4 +1,7 @@
 import React from "react";
+import logo from "../icons/logo.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const links = [
@@ -9,6 +12,9 @@ const Header = () => {
   ];
   return (
     <header className="header">
+      <Link href="/">
+        <Image className="logo" src={logo} alt="logo" width={48} height={48} />
+      </Link>
       <div className="container">
         <nav className="navigation-items">
           {links.map((link, index) => (

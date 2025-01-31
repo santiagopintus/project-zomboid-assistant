@@ -1,9 +1,17 @@
 header.header {
+  position: relative;
   background-color: $primary-light;
   color: $black;
   padding: 1rem 0;
   box-shadow: $shadow;
   margin-bottom: 32px;
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32px;
+  }
 
   .container {
     display: flex;
